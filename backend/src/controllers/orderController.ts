@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import Order from '../models/Order';
-import User from '../models/User';
-import Product from '../models/Product';
-import Invoice from '../models/Invoice';
+import Order from '../models/Order.js';
+import User from '../models/User.js';
+import Product from '../models/Product.js';
+import Invoice from '../models/Invoice.js';
 
 export const getMyOrders = async (req: Request, res: Response) => {
   try {

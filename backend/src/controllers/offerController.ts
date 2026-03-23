@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Offer from '../models/Offer';
+import Offer from '../models/Offer.js';
 
 export const getAllOffers = async (req: Request, res: Response) => {
   try {

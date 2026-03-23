@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import Banner from '../models/Banner';
-import { uploadToS3 } from '../services/s3Service';
+import Banner from '../models/Banner.js';
+import { uploadToS3 } from '../services/s3Service.js';
 
 // Get all banners (optionally filtered by type)
 export const getAllBanners = async (req: Request, res: Response) => {
