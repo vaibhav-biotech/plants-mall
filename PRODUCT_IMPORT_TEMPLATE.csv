@@ -1,0 +1,6 @@
+product_name,description,price,discount_percent,stock,category,image_url,sku
+Monstera Deliciosa,Beautiful large-leaf indoor plant perfect for living rooms,999,10,50,Indoor Plants,https://drive.google.com/uc?id=ABC123&export=download,MONSTERA001
+Snake Plant,Low maintenance succulent plant ideal for beginners,599,5,100,Indoor Plants,https://drive.google.com/uc?id=XYZ789&export=download,SNAKE001
+Pothos Golden,Climbing vine with golden leaves,799,15,75,Climbing Plants,https://drive.google.com/uc?id=DEF456&export=download,POTHOS001
+ZZ Plant,Hardy plant with glossy leaflets,1299,0,40,Indoor Plants,https://drive.google.com/uc?id=GHI789&export=download,ZZPLANT001
+Tulsi Plant,Sacred medicinal plant,349,20,200,Medicinal Plants,https://drive.google.com/uc?id=JKL012&export=download,TULSI001

@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+.nyc_output/
+
+# Production
+dist/
+build/
+out/
+.next/
+
+# Misc
+.DS_Store
+*.pem
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# OS
+Thumbs.db
+.env.production.local
+
+# Sensitive Documentation
+AUTH_SETUP.md
+AUTH_SYSTEM_SETUP.md
+AWS_S3_SETUP.md
+S3_IMPLEMENTATION_SUMMARY.md
+S3_SETUP_CHECKLIST.md
+ADMIN_UI_DESIGN.md
+ADMIN_UI_PREVIEW.html
+ADMIN_UI_SUMMARY.md
