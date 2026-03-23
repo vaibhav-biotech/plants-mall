@@ -18,7 +18,7 @@ import {
 const router = express.Router();
 
 // All analytics routes require admin authentication
-const adminOnly = [authenticate, authorize('admin')];
+const adminOnly = [authenticate, authorize(['admin'])];
 
 // Sales Analytics
 router.get('/sales/overview', adminOnly, getSalesOverview);

@@ -13,8 +13,8 @@ import {
   cancelOrder,
   deleteOrder,
   getOrderStats,
-} from '../controllers/orderController';
-import { authenticate, authorize } from '../middleware/auth';
+} from '../controllers/orderController.js';
+import { authenticate, authorize } from '../middleware/auth.js';
 
 // Optional auth middleware - tries to authenticate but doesn't fail if no token
 const optionalAuth = (req: any, res: any, next: any) => {
@@ -47,14 +47,14 @@ router.get('/my-orders', authenticate, getMyOrders);
 router.post('/:id/cancel', authenticate, cancelOrder);
 
 // Admin routes
-router.get('/stats', authenticate, authorize('admin'), getOrderStats);
-router.get('/', authenticate, authorize('admin'), getAllOrders);
-router.get('/:id', authenticate, authorize('admin'), getOrderById);
-router.put('/:id', authenticate, authorize('admin'), updateOrder);
-router.patch('/:id/status', authenticate, authorize('admin'), updateOrderStatus);
-router.patch('/:id/payment-status', authenticate, authorize('admin'), updatePaymentStatus);
-router.post('/:id/confirm', authenticate, authorize('admin'), confirmOrder);
+router.get('/stats', authenticate, authorize(['admin']), getOrderStats);
+router.get('/', authenticate, authorize(['admin']), getAllOrders);
+router.get('/:id', authenticate, authorize(['admin']), getOrderById);
+router.put('/:id', authenticate, authorize(['admin']), updateOrder);
+router.patch('/:id/status', authenticate, authorize(['admin']), updateOrderStatus);
+router.patch('/:id/payment-status', authenticate, authorize(['admin']), updatePaymentStatus);
+router.post('/:id/confirm', authenticate, authorize(['admin']), confirmOrder);
 router.get('/:orderId/invoice', authenticate, getInvoice);
-router.delete('/:id', authenticate, authorize('admin'), deleteOrder);
+router.delete('/:id', authenticate, authorize(['admin']), deleteOrder);
 
 export default router;

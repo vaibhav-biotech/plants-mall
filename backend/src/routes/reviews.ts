@@ -5,8 +5,8 @@ import {
   updateReview,
   deleteReview,
   getUserReviewableProducts,
-} from '../controllers/reviewController';
-import { authenticate } from '../middleware/auth';
+} from '../controllers/reviewController.js';
+import { authenticate } from '../middleware/auth.js';
 
 const router = express.Router();
 
