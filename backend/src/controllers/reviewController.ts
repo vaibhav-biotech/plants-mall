@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import Review from '../models/Review';
-import Order from '../models/Order';
-import Product from '../models/Product';
-import User from '../models/User';
+import Review from '../models/Review.js';
+import Order from '../models/Order.js';
+import Product from '../models/Product.js';
+import User from '../models/User.js';
 
 // Get all reviews for a product
 export const getProductReviews = async (req: Request, res: Response) => {
